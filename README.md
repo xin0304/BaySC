@@ -92,12 +92,6 @@ python scripts/<dataset>/run.py
 
 Where `<dataset>` is one of: `breast_cancer`, `her2_breast_a1`, `her2_breast_b1`, `her2_breast_c1`, `her2_breast_d1`, `her2_breast_e1`, `her2_breast_f1`, `her2_breast_g2`, `her2_breast_h1`, `starmap`, `misar_brain`, `human_lymph_node`.
 
-To verify the installation without downloading a real dataset, run:
-
-```bash
-python tests/smoke_test.py
-```
-
 The simulation datasets can be regenerated without downloading external data:
 
 ```bash
@@ -108,23 +102,6 @@ python -m simulations.generate simulation3
 
 See [`simulations/README.md`](simulations/README.md) for the fixed conditions,
 random seeds, and generated file format.
-
-## Datasets
-
-| Dataset | Modality | Spots | Reference K | ARI | spARI |
-|---------|----------|-------|--------|-----|-------|
-| Breast Cancer | RNA | 3,798 | 20 | 0.5541 | 0.6643 |
-| HER2 A1 | RNA | 346 | 6 | - | - |
-| HER2 B1 | RNA | 372 | 5 | - | - |
-| HER2 C1 | RNA | 351 | 4 | - | - |
-| HER2 D1 | RNA | 310 | 6 | - | - |
-| HER2 E1 | RNA | 307 | 6 | - | - |
-| HER2 F1 | RNA | 364 | 6 | - | - |
-| HER2 G2 | RNA | 356 | 7 | - | - |
-| HER2 H1 | RNA | 613 | 6 | - | - |
-| STARmap | RNA | 1,207 | 7 | - | - |
-| MISAR Brain | ATAC+RNA | 4,018 | 7 | - | - |
-| Human Lymph Node | RNA+Protein | 4,035 | 6 | - | - |
 
 ## Key Parameters
 
